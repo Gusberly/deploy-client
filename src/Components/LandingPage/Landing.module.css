@@ -1,0 +1,24 @@
+.Landing {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  background-image: url("../../Imagenes/bienvenidosgif.gif");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #e0fbfc;
+  font-family: "Ubuntu";
+  font-size: xx-large;
+}
+
+.btn {
+  font-size: 30px;
+  border-radius: 10px;
+  box-shadow: black;
+  background-color: white;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}

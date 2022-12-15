@@ -1,0 +1,46 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  z-index: 1;
+  box-shadow: -4px 5px 8px black;
+  height: 70px;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.head {
+  padding: 0px;
+  margin-top: -1px;
+  margin-left: 550%;
+  position: relative;
+  width: 200px;
+  height: 160px;
+  align-self: center;
+}
+
+.crearpoke {
+  margin-right: 20px;
+  display: contents;
+  justify-content: center;
+  width: 20%;
+}
+.crearpoke :hover {
+  transform: scale(1.2);
+}
+
+.crearpoke button {
+  border: none;
+  font-family: "Ubuntu";
+  color: #291ce2;
+  font-size: 20px;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  background-color: #faf8f800;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-left: 350px;
+}

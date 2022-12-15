@@ -1,0 +1,82 @@
+.seccion {
+  background-color: rgba(134, 154, 243, 0.966);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+
+  margin: 0;
+}
+
+.detalles {
+  font-family: "Ubuntu";
+  font-size: xx-large;
+  display: flex;
+  text-align: center;
+}
+
+.nombre {
+  position: absolute;
+  margin-left: 550px;
+  margin-top: 20px;
+  font-family: "Kanit";
+  font-size: 45px;
+  text-decoration: underline;
+}
+
+.stats {
+  font-family: "Kanit";
+  margin-left: 950px;
+  margin-top: 120px;
+  text-align: start;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #e6e0e083;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+}
+
+.type img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  margin-left: 300px;
+  margin-top: -280px;
+  margin-bottom: 300px;
+  display: flex;
+}
+
+.poke {
+  position: absolute;
+  margin-left: -600px;
+  margin-top: 90px;
+  width: 250px;
+  height: 400px;
+}
+
+.btnhome {
+  font-family: "Kanit";
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 30px;
+  width: 100px;
+  height: 50px;
+  background-color: #fca21100;
+  border-radius: 20px;
+  font-size: xx-large;
+  box-shadow: 2px 5px 10px -1px rgba(0, 0, 0, 0.75);
+}
+
+.btnhome button:hover {
+  transform: scale(2.1);
+}
+
+.loading {
+  margin-top: 12%;
+  margin-left: 35%;
+  margin-bottom: 10%;
+  height: 200px;
+  width: 300px;
+  position: relative;
+}

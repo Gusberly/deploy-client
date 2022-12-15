@@ -1,0 +1,28 @@
+.btn {
+  background: none;
+  font-size: 100%;
+  margin-left: 0.8em;
+  border-radius: 20px;
+  outline: none;
+  color: white;
+  line-height: 20px;
+  font-size: 200;
+  cursor: pointer;
+  font-weight: 500;
+}
+.btn:hover {
+  background-color: black;
+}
+.activeButton {
+  background: none;
+  font-size: 100%;
+  margin-left: 0.8em;
+  border-radius: 20px;
+  outline: none;
+  line-height: 20px;
+  font-size: 200;
+  color: white;
+  cursor: pointer;
+  background: black;
+  font-weight: 500;
+}

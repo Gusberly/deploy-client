@@ -1,0 +1,49 @@
+.buscar button:hover {
+  transform: scale(1.2);
+}
+
+.buscar {
+  width: 30%;
+  margin-left: 150px;
+}
+
+/* .buscar form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  height: 100px;
+} */
+
+.buscar input {
+  align-self: left;
+  font-family: "Ubuntu";
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 60%;
+  height: 30px;
+  color: black;
+  margin-left: -920px;
+}
+
+.buscar button {
+  /* margin-left: 1px; */
+  align-self: center;
+  border: none;
+  background-color: #2623e000;
+  cursor: pointer;
+  /* transition: all 0.3s ease-in-out;
+} */
+}
+.buscar button:hover {
+  transform: scale(1.2);
+}
+
+.imgSearch {
+  position: absolute;
+  margin-top: -25px;
+  width: 36px;
+  height: 36px;
+}

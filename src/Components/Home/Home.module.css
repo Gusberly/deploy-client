@@ -1,0 +1,88 @@
+.principal {
+  background-image: url("../../Imagenes/Fondo_Home.jpg");
+
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.imgRecarga {
+  margin-top: 15px;
+  width: 40px;
+  height: 40px;
+}
+
+.imgRecarga:hover {
+  transform: scale(1.2);
+}
+
+.btnRecarga {
+  background-color: transparent;
+  border: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40px;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-items: center;
+  margin-top: -50px;
+}
+
+.selectores {
+  text-align: center;
+  margin-top: 1rem;
+  margin: 12px 20px;
+}
+
+.select {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 10px 20px;
+}
+.select2 {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 10px 20px;
+}
+.select3 {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 10px 20px;
+}
+.recarga {
+  margin-top: 12%;
+  margin-left: 35%;
+  margin-bottom: 10%;
+  height: 200px;
+  width: 300px;
+  position: relative;
+}
+
+.pokeLoad {
+  margin-top: 19.2%;
+  margin-left: 30%;
+  margin-bottom: 15%;
+  height: 100px;
+  width: 150px;
+  position: relative;
+}
+
+.paginado {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  margin-top: -100px;
+  width: 100%;
+}
