@@ -9,7 +9,7 @@ export const Navbar = () => {
       <div>
         <img
           className={Styles.head}
-          src={require("../../Imagenes/poke-logooo.png").default}
+          src="../../Imagenes/poke-logooo.png"
           alt="Img not found"
         />
       </div>

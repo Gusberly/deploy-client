@@ -31,10 +31,6 @@ export const PokeDetalles = () => {
               <span>{pokeDetalles[0]?.name.toUpperCase()}</span>
             </div>
             <div className={Styles.stats}>
-              {/* <div>
-                ID
-                {`: ${pokeDetalles[0]?.id}`}
-              </div> */}
               <div>
                 Vida
                 {`: ${pokeDetalles[0]?.life}`}
