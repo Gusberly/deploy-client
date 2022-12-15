@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { postPokemon, getTypes } from "../../actions/action";
 import { useDispatch, useSelector } from "react-redux";
 import Styles from "./Create.module.css";
+import volver from "../../Imagenes/volver-Home.png";
 
 export function PokemonCreado() {
   const dispatch = useDispatch();
@@ -132,11 +133,7 @@ export function PokemonCreado() {
     <div className={Styles.todo}>
       <div className={Styles.home}>
         <Link to="/home">
-          <img
-            className={Styles.homee}
-            src={require("../../Imagenes/volver-Home.png").default}
-            alt="Home"
-          />
+          <img className={Styles.homee} src={volver} alt="Home" />
         </Link>
       </div>
 
@@ -224,7 +221,7 @@ export function PokemonCreado() {
                 />
                 <img
                   className={Styles.iconos2}
-                  src={require(`../Card/Tipos/${t}.png`).default}
+                  src={require(`../Card/Tipos/${t}.png`)}
                   alt="type"
                 />
               </div>

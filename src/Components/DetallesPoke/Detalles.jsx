@@ -62,7 +62,10 @@ export const PokeDetalles = () => {
               pokeDetalles[0]?.types.map((type) => {
                 return (
                   <div key={type} className={Styles.type}>
-                    <img alt="Type" src={`../Card/Tipos/${type}.png`} />
+                    <img
+                      alt="Type"
+                      src={require(`../Card/Tipos/${type}.png`)}
+                    />
                   </div>
                 );
               })}
