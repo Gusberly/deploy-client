@@ -63,7 +63,7 @@ export const PokeDetalles = () => {
               pokeDetalles[0]?.types.map((type) => {
                 return (
                   <div key={type} className={Styles.type}>
-                    <img alt="Type" src={tipos.type} />
+                    <img alt="Type" src={tipos} />
                   </div>
                 );
               })}
@@ -77,7 +77,7 @@ export const PokeDetalles = () => {
           </div>
         </div>
       ) : (
-        <img src={loading} alt="img not found" className={Styles.loading}></img>
+        <img src={loading} alt="img not found" className={Styles.loading} />
       )}
     </section>
   );
