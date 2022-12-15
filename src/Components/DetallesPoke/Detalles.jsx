@@ -4,6 +4,8 @@ import { Link, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getPokemonId, limpioDetalle } from "../../actions/action";
 import Styles from "./Detalles.module.css";
+import loading from "../../Imagenes/poke-loading.gif";
+import tipos from "../Card/Tipos";
 
 export const PokeDetalles = () => {
   const { id } = useParams();
@@ -61,10 +63,7 @@ export const PokeDetalles = () => {
               pokeDetalles[0]?.types.map((type) => {
                 return (
                   <div key={type} className={Styles.type}>
-                    <img
-                      alt="Type"
-                      src={require(`../Card/Tipos/${type}.png`).default}
-                    />
+                    <img alt="Type" src={tipos.type} />
                   </div>
                 );
               })}
@@ -78,11 +77,7 @@ export const PokeDetalles = () => {
           </div>
         </div>
       ) : (
-        <img
-          src={require("../../Imagenes/loading.gif").default}
-          alt="img not found"
-          className={Styles.loading}
-        ></img>
+        <img src={loading} alt="img not found" className={Styles.loading}></img>
       )}
     </section>
   );
