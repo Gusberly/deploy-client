@@ -13,6 +13,7 @@ import { Card } from "../Card/Card";
 import Paginado from "../Paginado/Paginado";
 import { Navbar } from "../NavBar/Nav";
 import Styles from "./Home.module.css";
+import gif from "../../Imagenes/poke-loading.gif";
 
 export default function Home() {
   const [, setRefreshState] = useState(false);
@@ -156,11 +157,7 @@ export default function Home() {
           </section>
         ) : !allPoke.length ? (
           <div>
-            <img
-              className={Styles.recarga}
-              src={require("../../Imagenes/loading.gif").default}
-              alt="loading"
-            />
+            <img className={Styles.recarga} src={gif} alt="loading" />
           </div>
         ) : (
           <img
