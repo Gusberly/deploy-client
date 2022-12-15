@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { buscarPokemon } from "../../actions/action";
 import Styles from "../SearchBar/Search.module.css";
 import { Link } from "react-router-dom";
+import buscar from "../../Imagenes/buscar.png";
 
 export default function SearchBar() {
   const dispatch = useDispatch();
@@ -29,11 +30,7 @@ export default function SearchBar() {
       />
       <Link to="/home/:id">
         <button type="submit" onClick={(e) => handleButton(e)}>
-          <img
-            className={Styles.imgSearch}
-            src={require("../../Imagenes/buscar.png").default}
-            alt="img not found"
-          />
+          <img className={Styles.imgSearch} src={buscar} alt="img not found" />
         </button>
       </Link>
     </div>

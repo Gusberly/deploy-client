@@ -14,6 +14,8 @@ import Paginado from "../Paginado/Paginado";
 import { Navbar } from "../NavBar/Nav";
 import Styles from "./Home.module.css";
 import gif from "../../Imagenes/poke-loading.gif";
+import recarga from "../../Imagenes/recargar.png";
+import noEncontrado from "../../Imagenes/noEncontrado.png";
 
 export default function Home() {
   const [, setRefreshState] = useState(false);
@@ -83,11 +85,7 @@ export default function Home() {
           handleClick(e);
         }}
       >
-        <img
-          className={Styles.imgRecarga}
-          src={require("../../Imagenes/recargar.png").default}
-          alt="Img Not Found"
-        />
+        <img className={Styles.imgRecarga} src={recarga} alt="Img Not Found" />
       </button>
       <div>
         <div className={Styles.selectores}>
@@ -162,7 +160,7 @@ export default function Home() {
         ) : (
           <img
             className={Styles.recarga}
-            src={require("../../Imagenes/noEncontrado.png").default}
+            src={noEncontrado}
             alt="no encontrado"
           />
         )}
