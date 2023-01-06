@@ -3,9 +3,7 @@ import axios from "axios";
 export const getPokemon = () => {
   return async function (dispatch) {
     try {
-      var pokemon = await axios.get(
-        "https://api-production-bd98.up.railway.app/pokemons"
-      );
+      var pokemon = await axios.get("/pokemons");
       console.log(pokemon);
       return dispatch({
         type: "GET_POKEMONS",
@@ -20,9 +18,7 @@ export const getPokemon = () => {
 export const getPokemonId = (id) => {
   return async function (dispatch) {
     try {
-      let pokeId = await axios.get(
-        `https://api-production-bd98.up.railway.app/pokemons/${id}`
-      );
+      let pokeId = await axios.get(`/pokemons/${id}`);
       console.log(pokeId);
       return dispatch({
         type: "GET_POKE_ID",
@@ -37,9 +33,7 @@ export const getPokemonId = (id) => {
 export const getTypes = () => {
   return async function (dispatch) {
     try {
-      let types = await axios.get(
-        "https://api-production-bd98.up.railway.app/types"
-      );
+      let types = await axios.get("/types");
       return dispatch({
         type: "GET_TYPES",
         payload: types.data,
@@ -53,10 +47,7 @@ export const getTypes = () => {
 export const postPokemon = (payload) => {
   return async function (dispatch) {
     try {
-      const crearPokemon = await axios.post(
-        "https://api-production-bd98.up.railway.app/pokemon",
-        payload
-      );
+      const crearPokemon = await axios.post("/pokemon", payload);
       return crearPokemon;
     } catch (error) {
       console.log("error al crear pokemon", error);
