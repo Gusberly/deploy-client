@@ -6,7 +6,7 @@ import { PokemonCreado } from "./Components/Create/Create";
 import { PokeDetalles } from "./Components/DetallesPoke/Detalles";
 import { Error404 } from "./Components/error404/error404";
 import axios from "axios";
-axios.defaults.baseURL = "https://api-production-bd98.up.railway.app/";
+// axios.defaults.baseURL = "https://api-production-bd98.up.railway.app/";
 
 function App() {
   return (
